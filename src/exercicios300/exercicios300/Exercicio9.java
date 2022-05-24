@@ -12,7 +12,7 @@ public class Exercicio9 {
 		
 		public boolean validaData() {
 			if (ano >= 0 ) {
-				if ((mes > 1) && (mes < 12)) {
+				if ((mes >= 1) && (mes < 12)) {
 					
 					if (mes == 1 || mes == 3 || mes == 5 || mes ==7 || mes == 8 ||
 							mes == 10 || mes == 12 ) {
@@ -38,9 +38,9 @@ public class Exercicio9 {
 					}
 						else {
 							// mes de fevereiro
-							if(ano % 4 != 0) { // Ano não é bissexto
+							if(ano % 4 != 0) { // Ano nÃ£o Ã© bissexto
 								
-								if(dia >= 1  && dia <= 28) {
+								if(dia >= 1  && dia <= 29) {
 									return true;
 								} else {
 									return false;
@@ -65,9 +65,11 @@ public class Exercicio9 {
 				System.out.println(this.dia + "/" + this.mes + "/" + this.ano);
 			}
 			else {
-				System.out.println("Data não é valida. ");
+				System.out.println("Data nÃ£o Ã© valida. ");
 			}
 		}
 		
 }	
+	
+
 	
